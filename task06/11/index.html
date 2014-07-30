@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 06</title>
+	<style>
+		.questions {
+			font-family: Verdana, Arial, Comic Sans MS;
+			font-size: 12px;
+			color: #686FFF;
+		}
+		.answers {
+			font-family: Verdana, Arial, Comic Sans MS;
+			font-size: 10px;
+			color: #F2EAEA;
+		}		
+		#main {
+			background: #000;
+			border: 1px solid #AAAAAA;
+			padding: 10px;
+			color: #fff;
+			width: 90%;
+		}
+		.bigtext {
+			font-size: 16px;
+		}
+		img.sprite {
+			width:46px;
+			height:44px;
+			background:url(image.gif) 0px 0px;
+		}        
+		.sprite:hover {
+			background: url(image.gif) 0px 44px;
+		}	
+	</style>
+  </head>
+  <body>
+	<div id="main">
+		<ol>
+			<li class = "questions">What is the difference between an ID selector and CLASS?</li>
+				<p class = "answers">
+				Use a class when you want to consistently style multiple elements throughout the page/site. Classes are useful when you have, or possibly will have in the future, more than one element that shares the same style. An example may be a div of "comments" or a certain list style to use for related links. <br><br>
+				Additionally, a given element can have more than one class associated with it, while an element can only have one id. For example, you can give a div two classes whose styles will both take effect. <br><br>
+				Furthermore, note that classes are often used to define behavioral styles in addition to visual ones. For example, the jQuery form validator plugin heavily uses classes to define the validation behavior of elements (e.g. required or not, or defining the type of input format)
+				Examples of class names are: tag, comment, toolbar-button, warning-message, or email. <br><br>
+				Use the ID when you have a single element on the page that will take the style. Remember that IDs must be unique. In your case this may be the correct option, as there presumably will only be one "main" div on the page. Examples of ids are: main-content, header, footer, or left-sidebar. 
+				</p>
+			<li class = "questions">Is there anything that CAN'T be replaced by Style Sheets? </li>
+			<p class = "answers">
+				Controlling of the flow of the page cann't be replaced by style sheets. Also one cann't have specific style for particular DIV/button based on user action. It needs help of javascript.
+				</p>
+			<li class = "questions">What is the use of CSS sprites?</li>
+				<p class = "answers">
+				An image sprite is a collection of images put into a single image. A web page with many images can take a long time to load and generates multiple server requests. Using image sprites will reduce the number of server requests and save bandwidth.
+				</p>
+				<p class = "answers bigtext">
+				Mouse over on below image to see different image. Both the images are in sprite image and displays on screen based on cordinates.
+				</p>
+				<img class="sprite" src="trans.gif" />
+		</ol>
+		<br>
+		
+    </div> <!-- /container -->
+	
+   </body>
+</html>
